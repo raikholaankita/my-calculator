@@ -23,7 +23,7 @@ root.geometry("280x360")
 root.resizable(False, False)
 
 entry = tk.Entry(root, font=("Arial", 18), borderwidth=3, relief="ridge", justify="right")
-entry.pack(fill=tk.X, ipady=8, padx=4, pady=4)  # ipady kam kiya
+entry.pack(fill=tk.X, ipady=8, padx=4, pady=4)  
 
 frame = tk.Frame(root)
 frame.pack()
@@ -41,7 +41,7 @@ for i, row in enumerate(buttons):
             cmd = calculate
         else:
             cmd = lambda x=btn: click_button(x)
-        # Button size aur padding kam
+        
         tk.Button(frame, text=btn, width=5, height=2, font=("Arial", 13),fg="black", 
                   command=cmd).grid(row=i, column=j, padx=3, pady=3)
 
